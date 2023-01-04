@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  function saveCashe(func) {
+  function saveCashe() {
     let forCashe = new Map();
     return function (argLikeKey, argLikeValue) {
       if (!forCashe.has(argLikeKey)) {
